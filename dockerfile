@@ -2,10 +2,12 @@ FROM node
 
 WORKDIR /dialzytest
 
-COPY . .
+COPY package.json .
 
 RUN npm install
 
-EXPOSE 5000
+COPY . .
+
+EXPOSE 3000
 
 CMD ["node","server.js"]

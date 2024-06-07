@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-const PORT = 5000;
+const PORT = 3000;
 // route
 app.get("/",(req,res)=> res.send("Hello Welcome in Dialzy Azure"));
 
